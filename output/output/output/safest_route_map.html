@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_593e7fbff39feb5f063fd4cad314c6eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_593e7fbff39feb5f063fd4cad314c6eb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_593e7fbff39feb5f063fd4cad314c6eb = L.map(
+                "map_593e7fbff39feb5f063fd4cad314c6eb",
+                {
+                    center: [28.645125068438222, 77.09611670622809],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47820109c9157cc25901606bb609c5a0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_47820109c9157cc25901606bb609c5a0.addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            var marker_c0deae9b01155a9fe5f23884db15ab0f = L.marker(
+                [28.734982224517044, 77.1908067908557],
+                {
+}
+            ).addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            var icon_d301b56e2898014037ce36b33875998a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3448896b18230363920f34250f04bbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60772477581b8827feb3b233edf3ed7d = $(`<div id="html_60772477581b8827feb3b233edf3ed7d" style="width: 100.0%; height: 100.0%;"><strong>Route Details:</strong><br>Route Id: 33.00<br>Safety Score: 0.32<br>Crime Density: 0.11<br>Lighting Density: 0.45<br>Surveillance Score: 0.01<br>Police Proximity: 0.23<br>Emergency Services: 0.26<br>Population Density: 0.11<br>User Feedback: 0.67<br>Public Transport Nearby: 0.53<br>Weather Conditions: 0.68</div>`)[0];
+                popup_c3448896b18230363920f34250f04bbb.setContent(html_60772477581b8827feb3b233edf3ed7d);
+            
+        
+
+        marker_c0deae9b01155a9fe5f23884db15ab0f.bindPopup(popup_c3448896b18230363920f34250f04bbb)
+        ;
+
+        
+    
+    
+            marker_c0deae9b01155a9fe5f23884db15ab0f.bindTooltip(
+                `<div>
+                     Route ID: 33.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0deae9b01155a9fe5f23884db15ab0f.setIcon(icon_d301b56e2898014037ce36b33875998a);
+            
+    
+            var marker_b1af06f651e441c57500d8ccab63e5f9 = L.marker(
+                [28.552189610015912, 77.33744145519115],
+                {
+}
+            ).addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            var icon_9e872bf4544e5bb84fd83ccefb9cc434 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e313e66452aceacfccc93fab040142d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a171f2f31eeb2610155797d9075e71c6 = $(`<div id="html_a171f2f31eeb2610155797d9075e71c6" style="width: 100.0%; height: 100.0%;"><strong>Route Details:</strong><br>Route Id: 34.00<br>Safety Score: 0.36<br>Crime Density: 0.09<br>Lighting Density: 0.92<br>Surveillance Score: 0.09<br>Police Proximity: 0.02<br>Emergency Services: 0.91<br>Population Density: 0.29<br>User Feedback: 0.74<br>Public Transport Nearby: 0.23<br>Weather Conditions: 0.21</div>`)[0];
+                popup_e313e66452aceacfccc93fab040142d2.setContent(html_a171f2f31eeb2610155797d9075e71c6);
+            
+        
+
+        marker_b1af06f651e441c57500d8ccab63e5f9.bindPopup(popup_e313e66452aceacfccc93fab040142d2)
+        ;
+
+        
+    
+    
+            marker_b1af06f651e441c57500d8ccab63e5f9.bindTooltip(
+                `<div>
+                     Route ID: 34.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1af06f651e441c57500d8ccab63e5f9.setIcon(icon_9e872bf4544e5bb84fd83ccefb9cc434);
+            
+    
+            var marker_0dd6a22a8f7f29c70d3bfb1a87d6920f = L.marker(
+                [28.5961278621497, 76.87220998712817],
+                {
+}
+            ).addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            var icon_9ac0c64ee5d05b6d36f14cd6a4bdfb95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f5980511a30a08e28cfc666befc41f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1774fbef4cdf84a9031f2523b4fab12c = $(`<div id="html_1774fbef4cdf84a9031f2523b4fab12c" style="width: 100.0%; height: 100.0%;"><strong>Route Details:</strong><br>Route Id: 35.00<br>Safety Score: 0.48<br>Crime Density: 0.25<br>Lighting Density: 0.61<br>Surveillance Score: 0.06<br>Police Proximity: 0.62<br>Emergency Services: 0.68<br>Population Density: 0.17<br>User Feedback: 0.20<br>Public Transport Nearby: 0.99<br>Weather Conditions: 0.95</div>`)[0];
+                popup_6f5980511a30a08e28cfc666befc41f9.setContent(html_1774fbef4cdf84a9031f2523b4fab12c);
+            
+        
+
+        marker_0dd6a22a8f7f29c70d3bfb1a87d6920f.bindPopup(popup_6f5980511a30a08e28cfc666befc41f9)
+        ;
+
+        
+    
+    
+            marker_0dd6a22a8f7f29c70d3bfb1a87d6920f.bindTooltip(
+                `<div>
+                     Route ID: 35.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0dd6a22a8f7f29c70d3bfb1a87d6920f.setIcon(icon_9ac0c64ee5d05b6d36f14cd6a4bdfb95);
+            
+    
+            var marker_5e2004ed99bf2de5d570e0847512c01e = L.marker(
+                [28.783941605081154, 77.0464848998355],
+                {
+}
+            ).addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            var icon_56f40e8072c67bc6455c8b0128b7400a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bcfbd0b26064c3c416400907e27c3ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e91325a9950778a25cf69e9cc286efc8 = $(`<div id="html_e91325a9950778a25cf69e9cc286efc8" style="width: 100.0%; height: 100.0%;"><strong>Route Details:</strong><br>Route Id: 71.00<br>Safety Score: 0.30<br>Crime Density: 0.21<br>Lighting Density: 0.69<br>Surveillance Score: 0.06<br>Police Proximity: 0.32<br>Emergency Services: 0.22<br>Population Density: 0.49<br>User Feedback: 0.07<br>Public Transport Nearby: 0.21<br>Weather Conditions: 0.50</div>`)[0];
+                popup_4bcfbd0b26064c3c416400907e27c3ca.setContent(html_e91325a9950778a25cf69e9cc286efc8);
+            
+        
+
+        marker_5e2004ed99bf2de5d570e0847512c01e.bindPopup(popup_4bcfbd0b26064c3c416400907e27c3ca)
+        ;
+
+        
+    
+    
+            marker_5e2004ed99bf2de5d570e0847512c01e.bindTooltip(
+                `<div>
+                     Route ID: 71.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e2004ed99bf2de5d570e0847512c01e.setIcon(icon_56f40e8072c67bc6455c8b0128b7400a);
+            
+    
+            var marker_1f691b1da0518744b71b7440ef4e9ca0 = L.marker(
+                [28.50560858575931, 77.02527723933495],
+                {
+}
+            ).addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            var icon_7e877225f83fcbc8e99ac8c2f37defe0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b3ce304cd8785279f241a3ac7a4e559 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1796d97849d2fd9ab5019138b426d355 = $(`<div id="html_1796d97849d2fd9ab5019138b426d355" style="width: 100.0%; height: 100.0%;"><strong>Route Details:</strong><br>Route Id: 91.00<br>Safety Score: 0.31<br>Crime Density: 0.37<br>Lighting Density: 0.02<br>Surveillance Score: 0.77<br>Police Proximity: 0.49<br>Emergency Services: 0.17<br>Population Density: 0.30<br>User Feedback: 0.06<br>Public Transport Nearby: 0.00<br>Weather Conditions: 0.56</div>`)[0];
+                popup_1b3ce304cd8785279f241a3ac7a4e559.setContent(html_1796d97849d2fd9ab5019138b426d355);
+            
+        
+
+        marker_1f691b1da0518744b71b7440ef4e9ca0.bindPopup(popup_1b3ce304cd8785279f241a3ac7a4e559)
+        ;
+
+        
+    
+    
+            marker_1f691b1da0518744b71b7440ef4e9ca0.bindTooltip(
+                `<div>
+                     Route ID: 91.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f691b1da0518744b71b7440ef4e9ca0.setIcon(icon_7e877225f83fcbc8e99ac8c2f37defe0);
+            
+    
+            var marker_71b229d4c5e5da90f522e01d11070918 = L.marker(
+                [28.570564529841487, 77.05643457047533],
+                {
+}
+            ).addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            var icon_ee16348c3a723f42d598b072862da001 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecac854eb9866126ce5b95fca61d5f63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edb2cb2d4217e8f4d5df3c2e57d45054 = $(`<div id="html_edb2cb2d4217e8f4d5df3c2e57d45054" style="width: 100.0%; height: 100.0%;"><strong>Route Details:</strong><br>Route Id: 97.00<br>Safety Score: 0.30<br>Crime Density: 0.17<br>Lighting Density: 0.44<br>Surveillance Score: 0.07<br>Police Proximity: 0.05<br>Emergency Services: 0.35<br>Population Density: 0.14<br>User Feedback: 0.66<br>Public Transport Nearby: 0.19<br>Weather Conditions: 0.72</div>`)[0];
+                popup_ecac854eb9866126ce5b95fca61d5f63.setContent(html_edb2cb2d4217e8f4d5df3c2e57d45054);
+            
+        
+
+        marker_71b229d4c5e5da90f522e01d11070918.bindPopup(popup_ecac854eb9866126ce5b95fca61d5f63)
+        ;
+
+        
+    
+    
+            marker_71b229d4c5e5da90f522e01d11070918.bindTooltip(
+                `<div>
+                     Route ID: 97.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71b229d4c5e5da90f522e01d11070918.setIcon(icon_ee16348c3a723f42d598b072862da001);
+            
+    
+            var poly_line_6bd3b63a47d4cf3869286145318594e1 = L.polyline(
+                [[28.734982224517044, 77.1908067908557], [28.643585917266478, 77.26462412302344], [28.552189610015912, 77.33744145519115], [28.552189610015912, 77.33744145519115], [28.574158736082808, 77.10532572115967], [28.5961278621497, 76.87220998712817]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            poly_line_6bd3b63a47d4cf3869286145318594e1.bindTooltip(
+                `<div>
+                     Safest Route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6ce6d16d0b3f3da3b042bc2409b3c79f = L.marker(
+                [28.552189610015912, 77.33744145519115],
+                {
+}
+            ).addTo(map_593e7fbff39feb5f063fd4cad314c6eb);
+        
+    
+            var icon_f2f261d6bede445e5350c321e8db4694 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_375e5c28c7a473264c513c3079bef791 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c2b865e775bf137c856d2cfc1fce236 = $(`<div id="html_1c2b865e775bf137c856d2cfc1fce236" style="width: 100.0%; height: 100.0%;">Total Distance: 70.59 km<br>Estimated Travel Time: 141 mins</div>`)[0];
+                popup_375e5c28c7a473264c513c3079bef791.setContent(html_1c2b865e775bf137c856d2cfc1fce236);
+            
+        
+
+        marker_6ce6d16d0b3f3da3b042bc2409b3c79f.bindPopup(popup_375e5c28c7a473264c513c3079bef791)
+        ;
+
+        
+    
+    
+            marker_6ce6d16d0b3f3da3b042bc2409b3c79f.bindTooltip(
+                `<div>
+                     Route Info
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6ce6d16d0b3f3da3b042bc2409b3c79f.setIcon(icon_f2f261d6bede445e5350c321e8db4694);
+            
+</script>
+</html>
